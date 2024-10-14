@@ -1,0 +1,194 @@
+/* ================================================================ >> Imports << */
+
+/* ================================================================ >> Imports << */
+
+/* ================================================================== >> Basic << */
+
+/* ------------------------------------------------------- >> * << */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+/* ------------------------------------------------------- >> * << */
+
+/* -------------------------------------------- >> scroll style << */
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0);
+}
+
+/* -------------------------------------------- >> scroll style << */
+
+/* ---------------------------------------------------- >> root << */
+:root {
+    --black: #282828;
+}
+
+/* ---------------------------------------------------- >> root << */
+
+/* ---------------------------------------------- >> All Father << */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-family: 'Comic Sans MS';
+    overflow: hidden;
+}
+
+/* ---------------------------------------------- >> All Father << */
+
+/* ================================================================== >> Basic << */
+
+/* ================================================================ >> Layer 1 << */
+.Layer1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    z-index: 0;
+}
+
+/* ------------------------------------------------- >> Body <<  */
+#BG_1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: var(--black);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ------------------------------------------------- >> Body <<  */
+
+/* ------------------------------------------------- >> Body <<  */
+
+
+/* --------------------------------------------------- >> BTN << */
+.BTN {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    gap: clamp(0.5rem, 1vw, 2rem);
+    align-items: center;
+    justify-content: center;
+    padding: clamp(0.5rem, 1vw, 2rem)clamp(1rem, 1.5vw, 3rem);
+    color: white;
+    transition: all 0.2s;
+    font-size: clamp(1rem, 1.3vw, 3rem);
+    border-radius: clamp(0.5rem, 1vw, 2rem);
+}
+
+/* --------------------------------------------------- >> BTN << */
+
+/* ------------------------------------------------ >> Submit << */
+#SubmitButtonID {
+    cursor: pointer;
+    background-color: white;
+    color: var(--black);
+}
+
+#SubmitButtonID:active {
+    scale: 0.95;
+}
+
+/* ------------------------------------------------ >> Submit << */
+
+/* ------------------------------------------------- >> Close << */
+#CloseButtonID {
+    transition: all 0.5s;
+    cursor: pointer;
+    background-color: red;
+    transform: rotate(0deg);
+}
+
+#CloseButtonID:hover {
+    animation: shaking 1s linear infinite;
+}
+
+#CloseButtonID:active {
+    animation: shaking 1s linear infinite;
+}
+
+@keyframes shaking {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+
+}
+
+/* ------------------------------------------------- >> Close << */
+
+/* -------------------------------------------------- >> Text << */
+#TextID {
+    background-color: transparent;
+    transition: all 0.5s;
+}
+
+#TextID:hover {
+    transform: rotate(360deg);
+}
+
+#TextID:active {
+    transform: rotate(360deg);
+}
+
+/* -------------------------------------------------- >> Text << */
+
+/* -------------------------------------------------- >> Icon << */
+#IconID {
+    background-color: transparent;
+    transition: all 0.5s;
+    font-size: clamp(1rem, 3vw, 6rem);
+    font-size: clamp(1.5rem, 2vw, 3rem);
+}
+
+#IconID:active {
+    transform: rotate(180deg);
+}
+
+#IconID:hover {
+    transform: rotate(180deg);
+}
+
+/* -------------------------------------------------- >> Icon << */
+
+/* ================================================================ >> Layer 1 << */
+
+/* ============================================================ >> Media Query << */
+
+/* ------------------------------------------ >> L mobile << */
+@media screen and (max-width: 425px) {
+    #BG_1 {
+        flex-direction: column;
+    }
+}
+
+/* ------------------------------------------ >> L mobile << */
+
+/* ============================================================ >> Media Query << */
