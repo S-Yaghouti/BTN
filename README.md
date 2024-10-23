@@ -45,42 +45,40 @@ A flexible and customizable button component built with HTML, CSS, and JavaScrip
 - HaveListener: Set to `true` to add an event listener to the button.
 - Listener: The function to be executed when the button is clicked.
 
-### Now, let me explain how use BTN.js component:
+### Here's how you can use the BTN.js component::
 
-- Slider.js : exported slider widget and then imported in scipt.js file, You can imported in any js file you want.
-
-1. Imported simple BTN.
+1. Import the Simple BTN component in a javascript file.
 ```javascript
 import { BTN } from "./BTN/BTN.js";
 ```
 
-2. Call the BTN to append
+2. Call the BTN component to create and append a button
 
 ```javascript
 
 // Variables for Button Configuration
-const SubmitID = "myButtonID"; // Unique ID for the button
-const SubmitHaveText = true; // Set to true to display text
-const SubmitButtonText = "Click Me"; // Text to display on the button
-const SubmitHaveIcon = true; // Set to true to display an icon
-const SubmitButtonIcon = "line-md:check-all"; // Icon from Iconify
-const SubmitHaveListener = true; // Set to true to add a click listener
-
-// Button Listener Function
-function SubmitListener() {
-  alert("Button clicked!"); // Action to perform on click
-}
+const ID = "myButtonID"; // A unique ID for Styling in css  
+const SubmitHaveText = true; // A boolean to determine whether to display the text.
+const Text = "Click Me"; // Text to display on the button
+const HaveIcon = true; // A boolean to determine whether to display the icon.
+const Icon = "line-md:check-all"; // Icon sourced from Iconify
+const HaveListener = true; // Set to true to enable the click listener.
 
 // Create Button
-const SubmitButton = BTN(
-  SubmitID, // Unique ID
-  SubmitHaveText, // Display Text
-  SubmitButtonText, // Button Text
-  SubmitHaveIcon, // Display Icon
-  SubmitButtonIcon, // Iconify Icon
-  SubmitHaveListener, // Add Listener
-  SubmitListener // Listener function
+const Button = BTN(
+  ID, // Unique ID
+  HaveText, // Display Text
+  Text, // Button Text
+  HaveIcon, // Display Icon
+  Icon, // Iconify Icon
+  HaveListener, // Add Listener
+  Listener // Listener function
 );
+
+// Button Listener Function
+function Listener() {
+  alert("Button clicked!"); // Action to perform on click
+}
 
 // Append Button to the DOM
 document.body.appendChild(SubmitButton.widget);
