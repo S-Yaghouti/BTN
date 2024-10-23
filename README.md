@@ -45,10 +45,9 @@ A flexible and customizable button component built with HTML, CSS, and JavaScrip
 - HaveListener: Set to `true` to add an event listener to the button.
 - Listener: The function to be executed when the button is clicked.
 
-- BTN / BTN.js: A simple button for the image slider.
-- Slider.js : exported slider widget and then imported in scipt.js file, You can imported in any js file you want.
-
 ### Now, let me explain how use BTN.js component:
+
+- Slider.js : exported slider widget and then imported in scipt.js file, You can imported in any js file you want.
 
 1. Imported simple BTN.
 ```javascript
