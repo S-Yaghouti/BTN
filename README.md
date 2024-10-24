@@ -2,7 +2,7 @@
 
 A flexible and customizable button component built with HTML, CSS, and JavaScript. The button can have text, an icon, or both at the same time. Additionally, it supports event listeners and allows setting an ID for targeted CSS styling.
 
-![Simple Button Component](images/Screenshot.jpg)
+<img src="./assets/preview.gif" alt="OTP preview" style="display: block; margin: 50px auto;">
 
 ## Related Projects
 
@@ -51,6 +51,7 @@ A flexible and customizable button component built with HTML, CSS, and JavaScrip
 ### Now, let me explain how use BTN.js component:
 
 1. Imported simple BTN.
+
 ```javascript
 import { BTN } from "./BTN/BTN.js";
 ```
@@ -58,7 +59,6 @@ import { BTN } from "./BTN/BTN.js";
 2. Call the BTN to append
 
 ```javascript
-
 // Variables for Button Configuration
 const SubmitID = "myButtonID"; // Unique ID for the button
 const SubmitHaveText = true; // Set to true to display text
@@ -86,6 +86,10 @@ const SubmitButton = BTN(
 // Append Button to the DOM
 document.body.appendChild(SubmitButton.widget);
 ```
+
+## Contributing
+ 
+**_Contributions are welcome!_**
 
 ## Credits & Contact
 
