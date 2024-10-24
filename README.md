@@ -2,7 +2,7 @@
 
 A flexible and customizable button component built with HTML, CSS, and JavaScript. The button can have text, an icon, or both at the same time. Additionally, it supports event listeners and allows setting an ID for targeted CSS styling.
 
-<img src="./assets/preview.gif" alt="OTP preview" style="display: block; margin: 50px auto;">
+<img src="./assets/preview.gif" alt="OTP preview" style="margin: 50px auto;">
 
 ## Related Projects
 
@@ -45,14 +45,8 @@ A flexible and customizable button component built with HTML, CSS, and JavaScrip
 - HaveListener: Set to `true` to add an event listener to the button.
 - Listener: The function to be executed when the button is clicked.
 
-### Here's how you can use the BTN.js component::
+### Here's how you can use the BTN.js component:
 
-<<<<<<< HEAD
-### Now, let me explain how use BTN.js component:
-
-1. Imported simple BTN.
-
-=======
 1. Import the Simple BTN component in a javascript file.
 ```javascript
 import { BTN } from "./BTN/BTN.js";
