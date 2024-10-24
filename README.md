@@ -54,7 +54,6 @@ A flexible and customizable button component built with HTML, CSS, and JavaScrip
 
 =======
 1. Import the Simple BTN component in a javascript file.
->>>>>>> 734c256deefc6c6346b3e1e52aa1754f7445d510
 ```javascript
 import { BTN } from "./BTN/BTN.js";
 ```
